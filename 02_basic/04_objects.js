@@ -20,7 +20,6 @@ const regularUser = {
     }
 }
 
-
 // console.log(regularUser.fullname.userfullname.firstname);
 
 const obj1 = {1:"a",2:"b"}
@@ -36,10 +35,27 @@ const obj3 = {...obj1, ...obj2, ...obj4}
 
 // console.log(obj3);
 
+// console.log(tinderUser) // output - { id: '1234', name: 'User', IslooggedIn: false }
 
-console.log(tinderUser) // output - { id: '1234', name: 'User', IslooggedIn: false }
+// console.log(Object.keys(tinderUser)) // output - [ 'id', 'name', 'IslooggedIn' ]
+// console.log(Object.values(tinderUser)) // output - [ '1234', 'User', false ]
+// console.log(Object.entries(tinderUser)) // output - [ [ 'id', '1234' ], [ 'name', 'User' ], [ 'IslooggedIn', false ] ]
+// console.log(Object.hasOwnProperty('IslooggedIn'))
 
-console.log(Object.keys(tinderUser)) // output - [ 'id', 'name', 'IslooggedIn' ]
-console.log(Object.values(tinderUser)) // output - [ '1234', 'User', false ]
-console.log(Object.entries(tinderUser)) // output - [ [ 'id', '1234' ], [ 'name', 'User' ], [ 'IslooggedIn', false ] ]
-console.log(Object.hasOwnProperty('IslooggedIn'))
+
+const course = {
+    coursename:'javascriptseries',
+    courseprice:'999',
+    courseInstructor:'Teacher'
+}
+
+
+// // 1st method to print the object
+
+// console.log(course.courseInstructor);
+
+// // 2nd method to print the object
+
+const {courseInstructor: instructor} = course;
+
+console.log(instructor);

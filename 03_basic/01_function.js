@@ -40,9 +40,37 @@ function loginUserMessage(username = 'Dafult'){
     return `${username} just logged in`;
 }
 
-console.log(loginUserMessage('javascript')); // output - javascript just logged in
+// console.log(loginUserMessage('javascript')); // output - javascript just logged in
 // console.log(loginUserMessage('')); // output -  just logged in
 // console.log(loginUserMessage()); // output -  undefined just logged in
 
 
-// last vide - https://www.youtube.com/watch?v=Bn56WahG_t0&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=19
+function calculateCartPrice(...num1){ // ...num1 - rest operator
+    return num1;
+}
+
+// console.log(calculateCartPrice(200, 300, 400));
+
+const user = {
+    username:'Javascript',
+    price: 200
+}
+
+function handleobject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+// handleobject(user);
+handleobject({
+    username:'Python',
+    price: 400
+});
+
+const mynewarr = [200,400,100,600];
+
+function returnSecondValue(getarr){
+    return getarr[1];
+}
+
+// console.log(returnSecondValue(mynewarr));
+console.log(returnSecondValue([200,400,100,600]));

@@ -41,5 +41,3 @@ mycoding.forEach((item) => {
     // console.log(item.languagemame);
     // console.log(item.languagefilename);
 });
-
-// start video - https://www.youtube.com/watch?v=9MfwYoWKKVE&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=30

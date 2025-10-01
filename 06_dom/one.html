@@ -4,10 +4,64 @@
     <meta charset="UTF-8">
     <title>DOM Learning</title>
 </head>
-<body>
-    <div class="bg-black">
-        <h1 class="heading">DOM Learning</h1>
+<style>
+    .bg-black{
+        background-color: #212121;
+        color: #fff;
+    }
+</style>
+<body class="bg-black">
+    <div>
+        <h1 id="title" class="heading">DOM Learning <span style="display: none;">Test Text</span></h1>
+        <h2 id="title" class="heading">DOM Learning h2</h2>
+        <h2 id="title" class="heading">DOM Learning heading</h2>
+        <h2 id="title" class="heading">DOM Learning new heading</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, eos. Totam qui aliquam libero, placeat accusantium laborum commodi eos consectetur exercitationem, neque magni nostrum facere doloribus? Ipsam amet voluptates accusamus!</p>
+        <input type="password" name="" id="">
     </div>
+
+    <ul>
+        <li class="list-item">one</li>
+        <li class="list-item">two</li>
+        <li class="list-item">three</li>
+        <li class="list-item">four</li>
+    </ul>
 </body>
 </html>
+
+
+<!-- important 
+ 
+textContent - if any text not visible in dom (full text provide)
+innerHTML - only visible text in dom is working
+
+const title = document.getElementById('title')
+undefined
+title.textContent
+"DOM Learning Test Text"
+title.innerText
+"DOM Learning"
+
+
+-->
+
+
+
+<!-- 
+
+<ul>
+    <li class="list-item">one</li>
+    <li class="list-item">two</li>
+    <li class="list-item">three</li>
+    <li class="list-item">four</li>
+</ul>
+
+convert to array
+
+const tempclasslist = document.getElementsByClassName('list-item') // HTMLCollection { 0: li.list-item, 1: li.list-item, 2: li.list-item, 3: li.list-item
+
+Array.from(tempclasslist) // Array(4) [ li.list-item, li.list-item, li.list-item, li.list-item ]
+
+-->
+
+<!-- start video - https://www.youtube.com/watch?v=xAvTgCsCHLs&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=33 -->

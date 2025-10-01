@@ -50,6 +50,3 @@ const shoppingcart = [
 const addtopay = shoppingcart.reduce((acc, item) => acc + item.price, 0)
 
 console.log(addtopay);
-
-
-// start video - https://www.youtube.com/watch?v=DcjNkHtDj8A&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=31

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>Javascript Events File 3</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+    
+        // const sayDate = function(str){
+        //     console.log(str, Date.now());
+        // }
+
+        let intervalid;
+        const sayStart = document.querySelector('#start').addEventListener('click', function(){
+            // console.log(str, Date.now());
+            intervalid = setInterval(function(){
+                console.log('hi', Date.now());
+            }, 1000);
+        });
+
+        // const intervalid = setInterval(sayStart, 1000, 'hi');
+
+        const sayStop = document.querySelector('#stop').addEventListener('click', function(){
+            clearInterval(intervalid);
+        });
+
+    </script>
+
+</body>
+</html>

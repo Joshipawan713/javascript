@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>Javascript Events</h1>
+    <button id="stop">Stop</button>
+
+    <script>
+        // setTimeout(function(){
+        //     console.log('jaavscript');
+        // }, 2000);
+
+        // setInterval(function(){
+        //     console.log('javascript1');
+        // }, 2000);
+
+        const setHandler = function(){
+            console.log('jaavscript');
+        }
+
+        const changeText = function(){
+            document.querySelector('h1').innerHTML = 'Best js';
+        }
+
+        const changeme = setTimeout(changeText, 2000);
+
+        document.querySelector('#stop').addEventListener('click', function(){
+            clearTimeout(changeme);
+            console.log('stopped');
+        })
+
+    </script>
+
+</body>
+</html>
